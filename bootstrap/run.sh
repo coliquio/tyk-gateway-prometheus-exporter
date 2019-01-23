@@ -18,7 +18,7 @@ tasks:
       })
     prometheusMetric:
       name: 'tyk_api_definition'
-      type: 'counter'
+      type: 'gauge'
       description: 'Number of API definition'
 EOF
 
