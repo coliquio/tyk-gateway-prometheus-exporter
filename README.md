@@ -10,8 +10,12 @@
 ## Usage
 
 ```
-docker run -p 8000:8000 -e TYK_GATEWAY_URL=<url> -e TYK_GATEWAY_SECRET=<secret> coliquiode/tyk-gateway-prometheus-sidecar
-curl localhost:8000/all/metrics
+$ docker run -p 8000:8000 -e TYK_GATEWAY_URL=<url> -e TYK_GATEWAY_SECRET=<secret> coliquiode/tyk-gateway-prometheus-sidecar
+$ curl localhost:8000/all/metrics
+# HELP tyk_api_definition Number of API definition
+# TYPE tyk_api_definition counter
+tyk_api_definition{name="foo",slug="foo",api_id="111",id="222",org_id="333"} 1
+tyk_api_definition{name="bar",slug="bar",api_id="444",id="555",org_id="666"} 1
 ```
 
 ## License
