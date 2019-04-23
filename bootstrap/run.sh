@@ -17,7 +17,7 @@ tasks:
         "org_id": org_id
       })
     prometheusMetric:
-      name: 'tyk_api_definition'
+      name: 'tyk_api_definition_info'
       type: 'gauge'
       description: 'Number of API definition'
 EOF
